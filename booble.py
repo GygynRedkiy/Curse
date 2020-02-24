@@ -1,7 +1,7 @@
 from random import randint
  
 N = 10
-a = [63, 80, 62, 69, 71, 37, 12, 90, 19, 67]
+a = [63, 80, 62, 69, 71, 37, 12, 90, 19, 12, 46, 86, 75, 8, 3, 16, 20, 11, 55, 67]
 for i in range(N):
     a.append(randint(1, 99))
 print(a)
