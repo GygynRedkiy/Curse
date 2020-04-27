@@ -11,6 +11,8 @@ def insertion_sort(nums):
         # Вставляем элемент
         nums[j + 1] = item_to_insert
 # Проверяем, что это работает
-random_list_of_nums = [63, 80, 62, 69, 71, 37, 12, 90, 19, 12, 46, 86, 75, 8, 3, 16, 20, 11, 55, 67]  
-insertion_sort(random_list_of_nums)  
-print(random_list_of_nums) 
+import random
+arry = [random.randint(0, 10000) for i in range(10000)]
+print(arry)
+insertion_sort(arry)
+print(arry)
