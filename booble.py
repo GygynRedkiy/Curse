@@ -1,18 +1,14 @@
-from random import randint
- 
-N = 10
-a = [63, 80, 62, 69, 71, 37, 12, 90, 19, 12, 46, 86, 75, 8, 3, 16, 20, 11, 55, 67]
-for i in range(N):
-    a.append(randint(1, 99))
-print(a)
- 
-i = 0
-while i < N - 1:
-    j = 0
-    while j < N - 1 - i:
-        if a[j] > a[j+1]:
-            a[j], a[j+1] = a[j+1], a[j]
-        j += 1
-    i += 1
- 
-print(a)
+def bubble(arr, dim):
+    alg_count = [0, 0]
+    for i in range(dim - 1):
+        alg_count[0] += 1
+        for j in range(dim - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                alg_count[1] += 1
+    print(alg_count)
+import random
+arry = [random.randint(0, 10000) for i in range(10000)]
+print(arry)
+bubble(arry, len(arry))
+print(arry)
